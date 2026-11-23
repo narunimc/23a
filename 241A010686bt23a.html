@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game kiểm tra tốc độ phản xạ - Bài 23A</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>GAME KIỂM TRA PHẢN XẠ</h1>
+        <p>Click vào hình tròn nhanh nhất có thể!</p>
+
+        <div class="information">
+            <div>Điểm: <span id="score">0</span></div>
+            <div>Thời gian: <span id="time">30</span> giây</div>
+        </div>
+
+        <div class="controls">
+            <label for="duration">Thời gian chơi:</label>
+            <input type="number" id="duration" value="30" min="1">
+
+            <button id="startBtn">Bắt đầu trò chơi</button>
+            <button id="colorBtn">Đổi màu nền</button>
+            <button id="playerBtn">Người chơi</button>
+        </div>
+
+        <p id="playerInfo"></p>
+
+        <div id="arena">
+            <div id="target"></div>
+            <p id="message">Nhấn Bắt đầu để chơi!</p>
+        </div>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
